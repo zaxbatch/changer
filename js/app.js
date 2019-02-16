@@ -4,7 +4,7 @@ console.log('here');
 
 //handle quarters
 
-function quarters() {
+function getChange() {
 	var pennies, nickels, dimes, quarters, remainder;
 	var  changeDue =  document.getElementById('change').value;
 	var remainder;
