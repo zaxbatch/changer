@@ -20,57 +20,57 @@ function quarters() {
 		// no dimes 
 		if(remainder.toFixed(2) / .10 < 1) {
 			alert('Dimes: 0');
-			if(remainder.toFixed(2)/.05<1) {
-				alert('Nickels: 0')
-			}
-			
-			if(remainder.toFixed(2)/.05>=1) {
-				nickels = remainder.toFixed(2)/.05
-				alert("Nickels: " + Math.floor(nickels))
+
+			// no nickels
+			if(remainder.toFixed(2) / .05 < 1) {
+				alert("Nickels: 0" );
+						pennies = remainder.toFixed(2)/.01;
+						alert('Pennies: ' + Math.floor(pennies));
+			} //nickels
+
+			if(remainder.toFixed(2) / .05 >= 1) {
+				nickels = remainder.toFixed(2) / .05;
+				
+				
+				alert("Nickels: " + Math.floor(nickels) );
 				remainder = remainder.toFixed(2) % .05;
-				if(remainder.toFixed(2) / .01 < 1){
-					alert('Pennies: 0');
-				} 
-				if(remainder.toFixed(2) / .01 >= 1) {
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies))
-				}
+					pennies = remainder.toFixed(2) / .01;
+					alert('Pennies: ' + pennies)
+
+
 			}
+
 		}
+		
 		// dimes
-		if(remainder.toFixed(2) / .10 >=1 ) {
+		if(remainder.toFixed(2) / .10 >= 1) {
 			dimes = remainder.toFixed(2)/.10
-			alert("Dimes: " + Math.floor(dimes))
-			remainder = remainder.toFixed(2) % .10;
-			
-			if(remainder.toFixed(2)/.05<1) {
-				alert('Nickels: 0');
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies));
+			alert('Dimes: ' + Math.floor(dimes));
+			remainder  = remainder.toFixed(2) % .10;
+			// no nickels
+			if(remainder.toFixed(2) / .05 < 1) {
+				alert("Nickels: 0" );
+						pennies = remainder.toFixed(2)/.01;
+						alert('Pennies: ' + Math.floor(pennies));
+			} //nickels
+
+			if(remainder.toFixed(2) / .05 >= 1) {
+				nickels = remainder.toFixed(2) / .05;
+						pennies = remainder.toFixed(2)/.01;
+
+				alert("Nickels: " + Math.floor(nickels) );
+					remainder = remainder.toFixed(2) % .05;
+					pennies = remainder.toFixed(2) / .01;
+					alert('Pennies: ' + pennies)
+
 
 			}
-			
-			if(remainder.toFixed(2)/.05>=1) {
-				nickels = remainder.toFixed(2)/.05
-				alert("Nickels: " + Math.floor(nickels));
-				remainder = remainder.toFixed(2) % .05;
-				if(remainder.toFixed(2) == 0){
-					alert('Pennies: 0');
-				} 
-				if(remainder.toFixed(2) != 0) {
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies))
-				}
-			}
+
 
 		}
 
-		// nickels
-		if(remainder.toFixed(2) / .05 < 1) {
-			alert("Nickels: 0");
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies));
-		}		
+	
+
 	} // end quarters
 
 	// no quarters
@@ -81,59 +81,55 @@ function quarters() {
 		// no dimes 
 		if(remainder.toFixed(2) / .10 < 1) {
 			alert('Dimes: 0');
-			if(remainder.toFixed(2)/.05<1) {
-				alert('Nickels: 0')
-			}
-			
-			if(remainder.toFixed(2)/.05>=1) {
-				nickels = remainder.toFixed(2)/.05
-				alert("Nickels: " + Math.floor(nickels))
+
+			// no nickels
+			if(remainder.toFixed(2) / .05 < 1) {
+				alert("Nickels: 0" );
+						pennies = remainder.toFixed(2)/.01;
+						alert('Pennies: ' + Math.floor(pennies));
+			} //nickels
+
+			if(remainder.toFixed(2) / .05 >= 1) {
+				nickels = remainder.toFixed(2) / .05;
+				
+				
+				alert("Nickels: " + Math.floor(nickels) );
 				remainder = remainder.toFixed(2) % .05;
-				if(remainder.toFixed(2) / .01 < 1){
-					alert('Pennies: 0');
-				} 
-				if(remainder.toFixed(2) / .01 >= 1) {
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies))
-				}
+					pennies = remainder.toFixed(2) / .01;
+					alert('Pennies: ' + pennies)
+
+
 			}
+
 		}
+		
 		// dimes
-		if(remainder.toFixed(2) / .10 >=1 ) {
+		if(remainder.toFixed(2) / .10 >= 1) {
 			dimes = remainder.toFixed(2)/.10
-			alert("Dimes: " + Math.floor(dimes))
-			remainder = remainder.toFixed(2) % .10;
-			
-			if(remainder.toFixed(2)/.05<1) {
-				alert('Nickels: 0');
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies));
+			alert('Dimes: ' + Math.floor(dimes));
+			remainder  = remainder.toFixed(2) % .10;
+			// no nickels
+			if(remainder.toFixed(2) / .05 < 1) {
+				alert("Nickels: 0" );
+						pennies = remainder.toFixed(2)/.01;
+						alert('Pennies: ' + Math.floor(pennies));
+			} //nickels
+
+			if(remainder.toFixed(2) / .05 >= 1) {
+				nickels = remainder.toFixed(2) / .05;
+						pennies = remainder.toFixed(2)/.01;
+
+				alert("Nickels: " + Math.floor(nickels) );
+					remainder = remainder.toFixed(2) % .05;
+					pennies = remainder.toFixed(2) / .01;
+					alert('Pennies: ' + pennies)
+
 
 			}
-			
-			if(remainder.toFixed(2)/.05>=1) {
-				nickels = remainder.toFixed(2)/.05
-				alert("Nickels: " + Math.floor(nickels));
-				remainder = remainder.toFixed(2) % .05;
-				if(remainder.toFixed(2) == 0){
-					alert('Pennies: 0');
-				} 
-				if(remainder.toFixed(2) != 0) {
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies))
-				}
-			}
+
 
 		}
 
-		// nickels
-		if(remainder.toFixed(2) / .05 < 1) {
-			alert("Nickels: 0");
-					pennies = remainder.toFixed(2)/.01;
-					alert('Pennies: ' + Math.floor(pennies));
-		}		
-
-
-			
+					
 	} //end no quarters
 }
